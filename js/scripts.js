@@ -60,4 +60,46 @@
     }
   });
 
+  // Typing animation for hero section
+  const typingText = document.querySelector('.typing-text');
+  if (typingText) {
+    const titles = [
+      'Software Engineer',
+      'Full Stack Developer',
+      'Problem Solver'
+    ];
+    let titleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
+
+    function type() {
+      const currentTitle = titles[titleIndex];
+      
+      if (isDeleting) {
+        typingText.textContent = currentTitle.substring(0, charIndex - 1);
+        charIndex--;
+        typingSpeed = 50;
+      } else {
+        typingText.textContent = currentTitle.substring(0, charIndex + 1);
+        charIndex++;
+        typingSpeed = 100;
+      }
+
+      if (!isDeleting && charIndex === currentTitle.length) {
+        isDeleting = true;
+        typingSpeed = 2000; // Pause at end
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        titleIndex = (titleIndex + 1) % titles.length;
+        typingSpeed = 500; // Pause before starting new word
+      }
+
+      setTimeout(type, typingSpeed);
+    }
+
+    // Start typing animation after a brief delay
+    setTimeout(type, 1000);
+  }
+
 })(jQuery); // End of use strict

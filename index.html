@@ -3,9 +3,22 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Keerti's Portfolio</title>
+        <meta name="description" content="Keerti Chaudhary - Software Engineer | Master's student in Computer Science at Santa Clara University. Skilled in Python, JavaScript, AWS, and full-stack development." />
+        <meta name="author" content="Keerti Chaudhary" />
+        <meta name="keywords" content="Keerti Chaudhary, Software Engineer, Full Stack Developer, Python, JavaScript, AWS, Computer Science, Portfolio" />
+        
+        <!-- Open Graph / Social Media -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Keerti Chaudhary - Software Engineer Portfolio" />
+        <meta property="og:description" content="Master's student in Computer Science at Santa Clara University. Specializing in full-stack development, data analysis, and cloud technologies." />
+        <meta property="og:url" content="https://17keerti.github.io/" />
+        
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Keerti Chaudhary - Software Engineer Portfolio" />
+        <meta name="twitter:description" content="Master's student in Computer Science at Santa Clara University" />
+        
+        <title>Keerti Chaudhary | Software Engineer Portfolio</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -19,14 +32,19 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        <!-- Skip to main content for accessibility -->
+        <a class="skip-to-main" href="#services">Skip to main content</a>
+        
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" role="navigation" aria-label="Main navigation">
             <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">KC</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Skills</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
@@ -34,137 +52,400 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead" role="banner">
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-10 align-self-end">
-                        <h1 class="text-uppercase text-white font-weight-bold">Keerti Chaudhary</h1>
-                        <hr class="divider my-4" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 font-weight-light mb-5">Software Engineer</p>
+                    <div class="col-lg-10">
+                        <div class="hero-content">
+                            <p class="hero-greeting text-white mb-2 fade-in">Hi, I'm</p>
+                            <h1 class="hero-name text-white font-weight-bold mb-3 fade-in-up">Keerti Chaudhary</h1>
+                            <h2 class="hero-title text-white-75 mb-4 fade-in-delay">
+                                <span class="typing-text"></span>
+                                <span class="cursor">|</span>
+                            </h2>
+                            <p class="hero-description text-white-75 mb-4 fade-in-delay-2">
+                                Software Engineer specializing in building scalable, user-focused applications<br>
+                                using modern backend, cloud, and full-stack technologies
+                            </p>
+                            <div class="hero-cta fade-in-delay-3">
+                                <a class="btn btn-primary btn-xl js-scroll-trigger mr-3 mb-3" href="#experience">
+                                    <i class="fas fa-briefcase mr-2"></i>View Experience
+                                </a>
+                                <a class="btn btn-light btn-xl mr-3 mb-3" href="https://drive.google.com/file/d/1P7D_e6tQxWzltYSwgL3kVIKo5gc0ozp8/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-file-pdf mr-2"></i>View Resume
+                                </a>
+                                <a class="btn btn-outline-light btn-xl mb-3" href="#contact">
+                                    <i class="fas fa-envelope mr-2"></i>Get In Touch
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#services" class="js-scroll-trigger">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
             </div>
         </header>
         <section class="page-section" id="services">
             <div class="container">
-                <h2 class="text-center mt-0">Skills</h2>
+                <h2 class="text-center mt-0">Skills & Expertise</h2>
                 <hr class="divider my-4" />
-                <p class="text-muted mb-5">Languages: Python | JavaScript | HTML | CSS | SQL</p>
-                <p class="text-muted mb-5">Databases: PostgreSQL | MySQL | MongoDB</p>
-                <p class="text-muted mb-5">Other Technologies: AWS | Jupyter Notebook | GraphQL | Tableau | Github | API interactions | Bootstrap</p>
-                <p class="text-muted mb-5">Industry Knowledge: Software Engineering Algorithms | Data Structures </p>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center mb-4">
+                        <div class="skill-card">
+                            <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                            <h4 class="h5 mb-3">Languages</h4>
+                            <p class="text-muted mb-0">Python, JavaScript, Go, Java, HTML, CSS, SQL</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center mb-4">
+                        <div class="skill-card">
+                            <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                            <h4 class="h5 mb-3">Databases</h4>
+                            <p class="text-muted mb-0">PostgreSQL, MySQL, MongoDB, DynamoDB</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center mb-4">
+                        <div class="skill-card">
+                            <i class="fas fa-cloud fa-3x text-primary mb-3"></i>
+                            <h4 class="h5 mb-3">Technologies</h4>
+                            <p class="text-muted mb-0">AWS, GraphQL, Tableau, Git, Postman, Heroku, Bootstrap, API Development</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center mb-4">
+                        <div class="skill-card">
+                            <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                            <h4 class="h5 mb-3">Core Knowledge</h4>
+                            <p class="text-muted mb-0">Algorithms, Data Structures, Software Engineering</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        
+        <!-- Experience -->
+        <section class="page-section" id="experience" role="region" aria-labelledby="experience-heading">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h2 id="experience-heading" class="text-center mt-0">Professional Experience</h2>
+                        <hr class="divider my-4" />
+                        
+                        <!-- Experience 1: Evovance -->
+                        <div class="experience-card mb-4">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h3 class="h5 mb-1">Software Engineering Intern</h3>
+                                    <h4 class="h6 text-primary mb-2"><a href="https://www.evovance.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Evovance</a></h4>
+                                </div>
+                                <div class="col-md-4 text-md-right">
+                                    <p class="text-muted mb-2"><i class="fas fa-calendar-alt mr-2"></i>July 2025 - October 2025</p>
+                                </div>
+                            </div>
+                            <ul class="text-muted mb-0" style="line-height: 1.8;">
+                                <li>Worked on <strong>backend architecture</strong> for a multi-user application using AWS serverless services</li>
+                                <li>Designed and implemented <strong>REST APIs</strong> using AWS Lambda and API Gateway</li>
+                                <li>Modeled and optimized <strong>DynamoDB tables</strong> for scalable access patterns</li>
+                                <li>Collaborated with engineers to design, test, and deploy <strong>production-ready features</strong></li>
+                                <li>Improved <strong>code quality, logging, and error handling</strong></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Experience 2: Avolta Inc -->
+                        <div class="experience-card mb-4">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h3 class="h5 mb-1">Backend Intern</h3>
+                                    <h4 class="h6 text-primary mb-2"><a href="https://www.avoltacanada.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Avolta Inc</a></h4>
+                                </div>
+                                <div class="col-md-4 text-md-right">
+                                    <p class="text-muted mb-2"><i class="fas fa-calendar-alt mr-2"></i>June 2023 - March 2024</p>
+                                </div>
+                            </div>
+                            <ul class="text-muted mb-0" style="line-height: 1.8;">
+                                <li>Contributed to <strong>backend development</strong> for a mobile application</li>
+                                <li>Implemented <strong>secure user authentication</strong> using JWT</li>
+                                <li>Built and tested <strong>APIs consumed by mobile clients</strong></li>
+                                <li>Worked closely with <strong>frontend and product teams</strong> to deliver features end-to-end</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Portfolio-->
-        <section class="page-section" id="Portfolio">
+        <section class="page-section bg-light" id="Portfolio" role="region" aria-labelledby="portfolio-heading">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-center mt-0">Portfolio</h2>
+                        <h2 id="portfolio-heading" class="text-center mt-0">Projects</h2>
                         <hr class="divider my-4" />
-                        <p class="text-muted mb-5">You can click on the title of the projects to visit respective GitHub repositories.</p>
+                        <p class="text-muted mb-5">Explore my work - Click project titles to view source code on GitHub</p>
                     </div>
-                </div>    
+                </div>
+                
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5">
-                            <i class="fas fa-4x fa-solid fa-table-cells text-primary mb-4"></i>
-                            <a class = "d-block" href="https://github.com/17keerti/tech-blog" target="_blank">Tech Blog</a>
-                            <p class="text-muted mb-0">This project uses the Model-View-Controller (MVC) paradigm to create a blog-style website where developers can create their account, and after logging in they can make posts, edit posts, and comment on other user's posts.</p>
-                            <!-- <a class = "d-block" href="">Blog Website</a> -->
+                    <!-- Project 1: ChallengeSpace -->
+                    <div class="col-12 mb-4">
+                        <div class="project-card-modern">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 text-center project-icon-col">
+                                    <div class="project-icon-wrapper">
+                                        <i class="fas fa-3x fa-trophy text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="project-content">
+                                        <h3 class="project-title mb-2">
+                                            <a href="https://www.evovance.com/" target="_blank" rel="noopener noreferrer">Challenge Space</a>
+                                        </h3>
+                                        <p class="project-subtitle mb-3">A multi-user accountability & challenge platform</p>
+                                        
+                                        <ul class="project-highlights mb-3">
+                                            <li>Designed and built a <strong>scalable serverless backend</strong> using AWS Lambda, API Gateway, and DynamoDB</li>
+                                            <li>Implemented <strong>secure authentication and authorization</strong> using Firebase tokens</li>
+                                            <li>Built a <strong>mobile frontend using Flutter</strong> for challenge creation and progress tracking</li>
+                                            <li>Integrated <strong>analytics</strong> to track user behavior, engagement, and retention</li>
+                                        </ul>
+                                        
+                                        <div class="project-tags">
+                                            <span class="badge badge-tech">AWS Lambda</span>
+                                            <span class="badge badge-tech">DynamoDB</span>
+                                            <span class="badge badge-tech">Firebase Auth</span>
+                                            <span class="badge badge-tech">Flutter</span>
+                                            <span class="badge badge-tech">Go</span>
+                                            <span class="badge badge-tech">PostHog</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5">
-                            <i class="fas fa-4x fa-brands fa-twitter text-primary mb-4"></i>
-                            <a class = "d-block" href="https://github.com/17keerti/sentiment_analysis_fproject" target="_blank">Twitter Sentiment Analysis</a>
-                            <p class="text-muted mb-0">Data Analysis/Dashboarding | The goal of this project was to analyse sentiments of people on guns and gun
-                                control setiments near and around 2022 US
-                                Midterm election using Natural Language Processing and supervised Machine Learning.</p>
-                                <a class = "d-block" href="https://public.tableau.com/app/profile/dana.o.burton/viz/Sentiment_Analysis_Tableau_Workbook/Dashboard1" target="_blank">Dashboard</a>
+                    
+                    <!-- Project 2: Distributed Key-Value Store -->
+                    <div class="col-12 mb-4">
+                        <div class="project-card-modern">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 text-center project-icon-col">
+                                    <div class="project-icon-wrapper" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                        <i class="fas fa-3x fa-server text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="project-content">
+                                        <h3 class="project-title mb-2">
+                                            <a href="https://github.com/17keerti/distributedProject" target="_blank" rel="noopener noreferrer">Distributed Publish-Subscribe System</a>
+                                        </h3>
+                                        <p class="project-subtitle mb-3">Academic Project - Distributed Systems</p>
+                                        
+                                        <ul class="project-highlights mb-3">
+                                            <li>Implemented a <strong>distributed system</strong> supporting data replication and fault tolerance</li>
+                                            <li>Designed <strong>communication between nodes</strong> using network protocols</li>
+                                            <li>Handled <strong>consistency and failure scenarios</strong> in a distributed environment</li>
+                                            <li>Gained hands-on experience with <strong>system reliability and scalability</strong> concepts</li>
+                                        </ul>
+                                        
+                                        <div class="project-tags">
+                                            <span class="badge badge-tech">Java</span>
+                                            <span class="badge badge-tech">Distributed Systems</span>
+                                            <span class="badge badge-tech">Networking</span>
+                                            <span class="badge badge-tech">Concurrency</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5">
-                            <i class="fas fa-4x fa-light fa-cloud text-primary mb-4"></i>
-                            <a class = "d-block" href="https://github.com/17keerti/Weather-Dashboard" target="_blank">Weather Dashboard</a>
-                            <p class="text-muted mb-0">Simple website that takes input from user to search for weather outlook for multiple cities.It uses the OpenWeather API to retrieve weather data and Uses localStorage to store any cities that have been searched and allows user to call them up quickly.</p>
-                            <a class = "d-block" href="https://17keerti.github.io/Weather-Dashboard/" target="_blank">Dashboard Website</a>
-
+                    
+                    <!-- Project 3: Tech Blog -->
+                    <div class="col-12 mb-4">
+                        <div class="project-card-modern">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 text-center project-icon-col">
+                                    <div class="project-icon-wrapper" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                        <i class="fas fa-3x fa-solid fa-table-cells text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="project-content">
+                                        <h3 class="project-title mb-2">
+                                            <a href="https://github.com/17keerti/tech-blog" target="_blank" rel="noopener noreferrer">Tech Blog</a>
+                                        </h3>
+                                        <p class="project-subtitle mb-3">Full-Stack Blog Application</p>
+                                        
+                                        <ul class="project-highlights mb-3">
+                                            <li>Built a <strong>full-stack application</strong> with search functionality and dynamic content</li>
+                                            <li>Designed <strong>backend APIs</strong> and database schema using MVC architecture</li>
+                                            <li>Implemented <strong>frontend UI</strong> for content creation, editing, and rendering</li>
+                                            <li>Focused on <strong>performance</strong> and clean user experience</li>
+                                        </ul>
+                                        
+                                        <div class="project-tags">
+                                            <span class="badge badge-tech">MVC</span>
+                                            <span class="badge badge-tech">Node.js</span>
+                                            <span class="badge badge-tech">JavaScript</span>
+                                            <span class="badge badge-tech">MySQL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5">
-                        <i class="fas fa-4x fa-book text-primary mb-4"></i>
-                        <a class = "d-block" href="https://github.com/17keerti/book-search-engine" target="_blank">Book Search Engine</a>
-                        <p class="text-muted mb-0">Developed a blog-style website utilizing MVC structure where authenticated users can publish their posts and comment on other user’s posts.</p>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5">
-                            <i class="fas fa-4x fa-key text-primary mb-4"></i>
-                            <a class = "d-block" href="https://github.com/17keerti/password-generator-29thmarch" target="_blank">Password Generator</a>
-                            <p class="text-muted mb-0">This generates a random password based on user-selected criteria. It gives several prompts to users to select options. Once all prompts are answered, the user will be given a password of their choice.</p>
-                            <a class = "d-block" href="https://17keerti.github.io/password-generator-29thmarch/" target="_blank">Website</a>
-
+                    
+                    <!-- Project 4: Book Search Engine -->
+                    <div class="col-12 mb-4">
+                        <div class="project-card-modern">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 text-center project-icon-col">
+                                    <div class="project-icon-wrapper" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                        <i class="fas fa-3x fa-book text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="project-content">
+                                        <h3 class="project-title mb-2">
+                                            <a href="https://github.com/17keerti/book-search-engine" target="_blank" rel="noopener noreferrer">Book Search Engine</a>
+                                        </h3>
+                                        <p class="project-subtitle mb-3">Full-Stack Search Application</p>
+                                        
+                                        <ul class="project-highlights mb-3">
+                                            <li>Full-stack application with <strong>GraphQL API</strong> for searching and saving books</li>
+                                            <li>Implemented <strong>user authentication</strong> and personalized book lists</li>
+                                            <li>Built with <strong>React frontend</strong> for responsive user interface</li>
+                                        </ul>
+                                        
+                                        <div class="project-tags">
+                                            <span class="badge badge-tech">GraphQL</span>
+                                            <span class="badge badge-tech">React</span>
+                                            <span class="badge badge-tech">MongoDB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5">
-                            <i class="fas fa-4x fa-user text-primary mb-4"></i>
-                            <a class = "d-block" href="https://github.com/17keerti/employee-tracker" target="_blank">Employee Tracker</a>
-                            <p class="text-muted mb-0">A command-line application to manage company's employee database using Node.js, Inquirer, and MySQL.The application links to an SQL database and allows users to view and manage employee records from the command line interface.</p>
-                        </div>
-                    </div>
-                  </div>
+                </div>
             </div>
         </section>
+        
         <!-- Skills-->
         <!-- About-->
-        <section class="page-section bg-primary" id="about">
+        <section class="page-section bg-primary" id="about" role="region" aria-labelledby="about-heading">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">About me</h2>
+                    <div class="col-lg-9">
+                        <h2 id="about-heading" class="text-white text-center mt-0">About Me</h2>
                         <hr class="divider light my-4" />
-                        <p class="text-black-50 mb-4">Hello, my name is Keerti, and I'm currently pursuing a Master's degree in Computer Science at Santa Clara University, seeking opportunities to apply my skills in a challenging and rewarding role. </p>
+                        
+                        <div class="about-content text-white" style="font-size: 1.05rem; line-height: 1.9;">
+                            <p class="mb-4">
+                                I'm a <strong>Software Engineer</strong> who enjoys building scalable systems and turning complex ideas into reliable, real-world software. I chose engineering because I love problem-solving at the system level, where design decisions truly matter. I'm currently pursuing my <strong>Master's in Computer Science at Santa Clara University</strong> while building cloud-based and backend applications.
+                            </p>
+                            
+                            <p class="mb-4">
+                                I've worked on projects and internships involving <strong>API design, data modeling, and application logic</strong> for multi-user systems. One of my key projects, <strong>ChallengeSpace</strong>, involved designing the backend architecture and APIs for a challenge-based platform, with a strong focus on scalability and maintainability. I've also explored distributed systems by building a publish–subscribe platform, which deepened my understanding of how large-scale systems behave in practice.
+                            </p>
+                            
+                            <p class="mb-4">
+                                I'm motivated by roles where I can grow as an engineer, collaborate with strong teams, and contribute across the stack. I enjoy learning new technologies, thinking through system trade-offs, and building software that has real impact.
+                            </p>
+                            
+                            <div class="about-focus text-center mt-5 mb-4">
+                                <p class="text-white-75 mb-3" style="font-size: 0.95rem; letter-spacing: 1px;">CURRENTLY FOCUSING ON</p>
+                                <div class="focus-areas">
+                                    <span class="focus-badge">Software Engineering</span>
+                                    <span class="focus-badge">Backend Engineering</span>
+                                    <span class="focus-badge">Distributed Systems</span>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center mt-5">
+                                <a class="btn btn-light btn-xl" href="#contact">
+                                    <i class="fas fa-comments mr-2"></i>Let's Connect
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Contact-->
-        <section class="page-section" id="contact">
+        <section class="page-section" id="contact" role="region" aria-labelledby="contact-heading">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="mt-0">Want to get in touch?</h2>
+                        <h2 id="contact-heading" class="mt-0">Let's Connect</h2>
                         <hr class="divider my-4" />
-                        <p class="text-muted mb-5">Please feel free to reach out using either my phone number or email below.</p>
+                        <p class="text-muted mb-5">I'm always open to discussing new opportunities, collaborations, or just having a chat about technology!</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 mr-auto text-center">
-                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                        <div>4157027398</div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 mb-4 text-center">
+                        <a href="tel:+14157027398" class="contact-card-link">
+                            <div class="contact-card">
+                                <i class="fas fa-phone fa-3x mb-3 text-primary"></i>
+                                <h4 class="h6 mb-2">Phone</h4>
+                                <p class="text-muted mb-0">+1 (415) 702-7398</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 mr-auto text-center">
-                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                        <a class="d-block" href="mailto:17keerti@gmail.com">17keerti@gmail.com</a>
+                    <div class="col-lg-3 col-md-6 mb-4 text-center">
+                        <a href="mailto:17keerti@gmail.com" class="contact-card-link">
+                            <div class="contact-card">
+                                <i class="fas fa-envelope fa-3x mb-3 text-primary"></i>
+                                <h4 class="h6 mb-2">Email</h4>
+                                <p class="text-muted mb-0">17keerti@gmail.com</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 mr-auto text-center">
-                        <i class="fab fa-linkedin-in fa-3x mb-3 text-muted"></i>
-                        <a class = "d-block" href="http://linkedin.com/in/keerti-chaudhary" target="_blank">My LinkedIn</a>
+                    <div class="col-lg-3 col-md-6 mb-4 text-center">
+                        <a href="https://linkedin.com/in/keerti-chaudhary" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+                            <div class="contact-card">
+                                <i class="fab fa-linkedin-in fa-3x mb-3 text-primary"></i>
+                                <h4 class="h6 mb-2">LinkedIn</h4>
+                                <p class="text-muted mb-0">Connect with me</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 mr-auto text-center">
-                        <i class="fab fa-github fa-3x mb-3 text-muted"></i>
-                        <a class = "d-block" href="https://github.com/17keerti" target="_blank">My GitHub</a>
+                    <div class="col-lg-3 col-md-6 mb-4 text-center">
+                        <a href="https://github.com/17keerti" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+                            <div class="contact-card">
+                                <i class="fab fa-github fa-3x mb-3 text-primary"></i>
+                                <h4 class="h6 mb-2">GitHub</h4>
+                                <p class="text-muted mb-0">View my code</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
+        
         <!-- Footer-->
+        <footer class="bg-dark text-white py-4" role="contentinfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center text-lg-left mb-3 mb-lg-0">
+                        <p class="mb-0">&copy; 2025 Keerti Chaudhary. All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-right">
+                        <a href="https://github.com/17keerti" target="_blank" rel="noopener noreferrer" class="text-white mx-2" aria-label="GitHub Profile">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/keerti-chaudhary" target="_blank" rel="noopener noreferrer" class="text-white mx-2" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                        <a href="mailto:17keerti@gmail.com" class="text-white mx-2" aria-label="Email">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
         <!-- Bootstrap core JS-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
